@@ -42,6 +42,15 @@ module.exports = {
           position: 'right'
         },
         {
+          label: '分享PPT',
+          position: 'right',
+          items: [
+             { label: 'AST', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/AST%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.pdf' },
+            { label: 'Docker', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/docker%E5%88%9D%E6%8E%A2.pdf' },
+            { label: 'Flutter', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/flutter%E5%88%9D%E4%BD%93%E9%AA%8C.pdf' },
+          ]
+        },
+        {
           href: 'https://github.com/jweboy',
           label: 'GitHub',
           position: 'right',
