@@ -1,4 +1,4 @@
-# Website
+# Website [![自动部署博客网站](https://github.com/jweboy/blog/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/jweboy/blog/actions/workflows/main.yml)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
