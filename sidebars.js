@@ -2,6 +2,14 @@ module.exports = {
   docs: [
     {
       type: 'category',
+      label: 'Webpack',
+      collapsed: false,
+      items: [
+        'webpack/optimization',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Javascript',
       collapsed: false,
       items: [
