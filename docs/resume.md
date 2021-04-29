@@ -14,7 +14,7 @@ title: 简历
 - 技术博客：<https://jweboy.com/blog>
 - Github：<https://github.com/jweboy>
 - 期望职位：Web 前端工程师
-- 期望薪资：税前月薪 20 ~ 25k
+- 期望薪资：面议
 - 目前状态：在职看机会
 
 ## 项目经历
