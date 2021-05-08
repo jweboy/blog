@@ -24,12 +24,12 @@ jobs:
       #     node-version: '10'
 
       # 安装项目依赖
-      # - name: Install depends
-      #   run: npm install
+      - name: Install depends
+        run: npm install
 
       # 打包项目代码
-      # - name: Build bundles
-      #   run: npm run build
+      - name: Build bundles
+        run: npm run build
 
       # 链接服务器上传打包后的目录文件
       - name: Deploy to Huawei Cloud
