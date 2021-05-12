@@ -13,7 +13,9 @@ module.exports = {
       label: 'Javascript',
       collapsed: false,
       items: [
+        'javascript/map-object-comparison',
         'javascript/array-deduplication',
+        'javascript/iterator',
         'javascript/class',
         'javascript/new-object',
         'javascript/object-copy',
