@@ -3,7 +3,7 @@ module.exports = {
   title: 'biubiubiu的博客',
   tagline: 'The tagline of my site',
   url: 'https://jweboy.com/blog',
-  baseUrl: '/blog/',
+  // baseUrl: '/blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
