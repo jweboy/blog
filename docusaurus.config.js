@@ -32,6 +32,11 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'linux',
+          label: 'Linux',
+          position: 'left',
+        },
+        {
           to: 'blog',
           label: '技术文章',
           position: 'left',

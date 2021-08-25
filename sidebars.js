@@ -55,6 +55,7 @@ module.exports = {
       label: '设计模式',
       collapsed: false,
       items: [
+        'design-patterns/singleton',
         'design-patterns/pubsub',
       ],
     },
