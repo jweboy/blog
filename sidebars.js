@@ -56,6 +56,7 @@ module.exports = {
       collapsed: false,
       items: [
         'design-patterns/singleton',
+        'design-patterns/strategy',
         'design-patterns/pubsub',
       ],
     },

@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'biubiubiu的博客',
-  tagline: 'The tagline of my site',
+  tagline: '努力成为一个写得了一手好代码、做得了一手好菜的程序猿',
   url: 'https://jweboy.com/blog',
   baseUrl: '/blog/',
   onBrokenLinks: 'throw',
