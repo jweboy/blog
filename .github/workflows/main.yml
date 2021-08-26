@@ -1,0 +1,44 @@
+# 官方文档  https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+# workflow 名称
+name: '自动部署博客网站'
+
+# 触发 workflow 的条件
+on:
+  push:
+   branches: [main]
+
+# workflow 需要执行的任务
+jobs:
+  build-and-deploy:
+    # 指定运行的虚拟机环境，具体可查看官方文档
+    runs-on: ubuntu-latest
+    steps:
+      # 使用 Github 官方 action 获取源码
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # - name: use Node.js 10 and Install depends
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '10'
+
+      # 安装项目依赖
+      - name: Install depends
+        run: npm install
+
+      # 打包项目代码
+      - name: Build bundles
+        run: npm run build
+
+      # 链接服务器上传打包后的目录文件
+      - name: Deploy to Huawei Cloud
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --progress --delete
+          remote_key: ${{ secrets.ACCESS_TOKEN }}
+          remote_host: ${{ secrets.HUAWEI_CLOUD_HOST }}
+          remote_user: ${{ secrets.HUAWEI_CLOUD_USER }}
+          path: ${{ secrets.SOURCE }}
+          remote_path: ${{ secrets.DIST }}
+
