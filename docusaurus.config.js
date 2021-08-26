@@ -31,11 +31,11 @@ module.exports = {
           label: '前端知识点积累',
           position: 'left',
         },
-        {
-          to: 'linux',
-          label: 'Linux',
-          position: 'left',
-        },
+        // {
+        //   to: 'linux',
+        //   label: 'Linux',
+        //   position: 'left',
+        // },
         {
           to: 'blog',
           label: '技术文章',
