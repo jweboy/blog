@@ -28,35 +28,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Web',
-      collapsed: false,
-      items: [
-        'web/fetch',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'React',
-      collapsed: false,
-      items: [
-        'react/render',
-      ],
-    },
-    {
-      type: 'category',
-      label: '正则',
-      collapsed: false,
-      items: [
-        'regexp/regexp',
-      ],
-    },
-    {
-      type: 'category',
       label: '设计模式',
       collapsed: false,
       items: [
         'design-patterns/singleton',
         'design-patterns/strategy',
+        'design-patterns/proxy',
         'design-patterns/pubsub',
       ],
     },
@@ -91,6 +68,30 @@ module.exports = {
         'http/basic',
         'http/header',
         'http/status-code',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Web',
+      collapsed: false,
+      items: [
+        'web/fetch',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'React',
+      collapsed: false,
+      items: [
+        'react/render',
+      ],
+    },
+    {
+      type: 'category',
+      label: '正则',
+      collapsed: false,
+      items: [
+        'regexp/regexp',
       ],
     },
     {
