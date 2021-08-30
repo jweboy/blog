@@ -34,6 +34,7 @@ module.exports = {
         'design-patterns/singleton',
         'design-patterns/strategy',
         'design-patterns/proxy',
+        'design-patterns/iterator',
         'design-patterns/pubsub',
       ],
     },
