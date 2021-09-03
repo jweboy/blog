@@ -1,0 +1,45 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+
+  image: node:12.22-alpine
+
+  only:
+    - master
+
+  # cache:
+  #   paths:
+  #     - node_modules/
+
+  before_script:
+    - npm install -d --update-checksums --ignore-optional --registry=https://registry.npm.taobao.org
+
+  script:
+    - npm run build
+
+  artifacts:
+    expire_in: 60mins
+    paths:
+      - build/
+
+deploy:
+  stage: deploy
+
+  only:
+    - master
+
+  before_script:
+    - sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+    - apk update && apk add openssh-client rsync
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config'
+
+  script:
+    - rsync -rav --progress -e "ssh -p $SSH_PORT" ./build/* $SERVER_USER@$SERVER_HOST:$SERVER_PATH
+
