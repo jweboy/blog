@@ -6,6 +6,7 @@ module.exports = {
       collapsed: false,
       items: [
         'webpack/optimization',
+        'webpack/version5',
       ],
     },
     {
