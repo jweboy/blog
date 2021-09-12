@@ -56,8 +56,8 @@ module.exports = {
           ]
         },
         {
-          href: 'https://github.com/jweboy',
-          label: 'GitHub',
+          href: 'http://nas.jweboy.online:30000/',
+          label: 'Gitlab',
           position: 'right',
         },
       ],
