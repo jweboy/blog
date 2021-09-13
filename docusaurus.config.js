@@ -44,7 +44,17 @@ module.exports = {
         {
           to: 'docs/resume',
           label: '简历',
-          position: 'right'
+          position: 'right',
+          items: [
+            {
+              label: 'Markdown',
+              href: '/docs/resume'
+            },
+            {
+              label: 'PDF',
+              href: 'https://assets.jweboy.com/pdf/resume.pdf',
+            }
+          ]
         },
         {
           label: '分享PPT',
