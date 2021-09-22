@@ -15,8 +15,7 @@ build:
   #     - node_modules/
 
   before_script:
-    - npm install -d --update-checksums --ignore-optional --registry=https://registry.npm.taobao.org
-
+    - yarn install --production --update-checksums --ignore-optional
   script:
     - npm run build
 
