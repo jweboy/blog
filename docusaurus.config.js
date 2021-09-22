@@ -42,6 +42,11 @@ module.exports = {
           position: 'left',
         },
         {
+          href: 'https://jweboy.com/showcase',
+          label: '项目展示',
+          position: 'right',
+        },
+        {
           to: 'docs/resume',
           label: '简历',
           position: 'right',
@@ -52,7 +57,7 @@ module.exports = {
             },
             {
               label: 'PDF',
-              href: 'https://assets.jweboy.com/pdf/resume.pdf',
+              href: 'https://assets.jweboy.com/pdf/my_resume.pdf',
             }
           ]
         },
@@ -60,14 +65,19 @@ module.exports = {
           label: '分享PPT',
           position: 'right',
           items: [
-             { label: 'AST', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/AST%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.pdf' },
-            { label: 'Docker', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/docker%E5%88%9D%E6%8E%A2.pdf' },
-            { label: 'Flutter', href: 'https://biubiubiu.frontend.obs.cn-east-3.myhuaweicloud.com/flutter%E5%88%9D%E4%BD%93%E9%AA%8C.pdf' },
+             { label: 'AST', href: 'https://assets.jweboy.com/pdf/AST%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.pdf' },
+            { label: 'Docker', href: 'https://assets.jweboy.com/pdf/docker%E5%88%9D%E6%8E%A2.pdf' },
+            { label: 'Flutter', href: 'https://assets.jweboy.com/pdf/flutter%E5%88%9D%E4%BD%93%E9%AA%8C.pdf' },
           ]
         },
         {
           href: 'http://nas.jweboy.online:30000/',
           label: 'Gitlab',
+          position: 'right',
+        },
+         {
+          href: 'https://github.com/jweboy',
+          label: 'Github',
           position: 'right',
         },
       ],
