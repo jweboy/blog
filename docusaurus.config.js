@@ -42,7 +42,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://jweboy.com/showcase',
+          href: 'http://jweboy.com:3000',
           label: '项目展示',
           position: 'right',
         },
