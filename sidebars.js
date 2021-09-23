@@ -2,6 +2,14 @@ module.exports = {
   docs: [
     {
       type: 'category',
+      label: '手写源码',
+      collapsed: false,
+      items: [
+        'source_code/new_object',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Webpack',
       collapsed: false,
       items: [
