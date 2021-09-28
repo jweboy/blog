@@ -94,6 +94,7 @@ module.exports = {
       collapsed: false,
       items: [
         'react/render',
+        'react/create-element',
       ],
     },
     {
