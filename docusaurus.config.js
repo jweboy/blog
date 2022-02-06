@@ -28,17 +28,17 @@ module.exports = {
         {
           to: 'docs',
           // activeBasePath: 'docs',
-          label: '前端知识点积累',
+          label: '技术积累',
           position: 'left',
         },
-        // {
-        //   to: 'linux',
-        //   label: 'Linux',
-        //   position: 'left',
-        // },
         {
           to: 'blog',
           label: '技术文章',
+          position: 'left',
+        },
+        {
+          to: 'linux',
+          label: 'Linux',
           position: 'left',
         },
         {

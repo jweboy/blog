@@ -2,6 +2,14 @@ module.exports = {
   docs: [
     {
       type: 'category',
+      label: 'linux',
+      collapsed: false,
+      items: [
+        'linux/shell',
+      ],
+    },
+    {
+      type: 'category',
       label: '手写源码',
       collapsed: false,
       items: [
