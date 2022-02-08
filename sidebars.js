@@ -1,19 +1,26 @@
 module.exports = {
   docs: [
-    {
-      type: 'category',
-      label: 'linux',
-      collapsed: false,
-      items: [
-        'linux/shell',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'linux',
+    //   collapsed: false,
+    //   items: [
+    //     'linux/shell',
+    //   ],
+    // },
     {
       type: 'category',
       label: '手写源码',
       collapsed: false,
       items: [
         'source_code/new_object',
+        'source_code/call',
+        'source_code/apply',
+        'source_code/bind',
+        'source_code/instanceof',
+        'source_code/shallow_copy',
+        'source_code/typeof',
+        'source_code/deep_clone',
       ],
     },
     {

@@ -36,13 +36,13 @@ module.exports = {
           label: '技术文章',
           position: 'left',
         },
+        // {
+        //   to: 'linux',
+        //   label: 'Linux',
+        //   position: 'left',
+        // },
         {
-          to: 'linux',
-          label: 'Linux',
-          position: 'left',
-        },
-        {
-          href: 'http://jweboy.com:3000',
+          href: 'http://121.43.178.172:3001',
           label: '项目展示',
           position: 'right',
         },
@@ -57,7 +57,7 @@ module.exports = {
             },
             {
               label: 'PDF',
-              href: 'https://assets.jweboy.com/pdf/my_resume.pdf',
+              href: 'https://assets.jweboy.com/pdf/web%E5%89%8D%E7%AB%AF-%E8%92%8B%E7%A3%8A%E7%9A%84%E7%AE%80%E5%8E%86-20210206.pdf',
             }
           ]
         },
@@ -75,9 +75,9 @@ module.exports = {
           label: 'Gitlab',
           position: 'right',
         },
-         {
-          href: 'https://github.com/jweboy',
-          label: 'Github',
+        {
+          href: 'https://juejin.cn/user/2805609402235149/posts',
+          label: '掘金',
           position: 'right',
         },
       ],
