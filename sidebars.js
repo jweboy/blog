@@ -1,13 +1,13 @@
 module.exports = {
   docs: [
-    // {
-    //   type: 'category',
-    //   label: 'linux',
-    //   collapsed: false,
-    //   items: [
-    //     'linux/shell',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: '源码解析',
+      collapsed: false,
+      items: [
+        'framework_source_code/redux',
+      ],
+    },
     {
       type: 'category',
       label: '手写源码',
