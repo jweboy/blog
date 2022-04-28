@@ -1,25 +1,29 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'biubiubiu的博客',
+  title: 'jweboy blog',
   tagline: '努力成为一个写得了一手好代码、做得了一手好菜的程序猿',
-  url: 'https://jweboy.com/blog',
+  url: 'https://jweboy.com',
   baseUrl: '/blog/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'jweboy', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
-  plugins: ['@docusaurus/theme-live-codeblock'],
+
+  onBrokenLinks: 'throw', // 检测无效链接
+  onBrokenMarkdownLinks: 'warn', // 检测无效 Markdown 链接
+  organizationName: 'jweboy', // 组织名称
+  // projectName: 'blog',
+  plugins: ['@docusaurus/theme-live-codeblock'], // 插件
   themeConfig: {
-    liveCodeBlock: {
-      /**
-       * 实时效果显示的位置，可位于编辑器上方或下方。
-       * 可为："top" | "bottom"
-       */
-      playgroundPosition: 'bottom',
+    colorMode: {
+      defaultMode: 'dark', // 主题颜色
+      respectPrefersColorScheme: true, // 主题颜色跟随系统变化
     },
+    liveCodeBlock: { // 实时编辑的代码块
+      playgroundPosition: 'bottom', // 代码块位置
+    },
+    // algolia: {
+    //   searchPagePath: true,
+    // },
     navbar: {
-      title: 'biubiubiu的博客',
+      title: 'jweboy blog',
       logo: {
         alt: '知识积累图标',
         src: 'img/logo.svg',
@@ -27,22 +31,22 @@ module.exports = {
       items: [
         {
           to: 'docs',
-          // activeBasePath: 'docs',
-          label: '技术积累',
-          position: 'left',
+          label: '前端积累',
+          position: 'right',
         },
         {
           to: 'blog',
-          label: '技术文章',
-          position: 'left',
+          label: '日常积累',
+          position: 'right',
+          items: [
+            {
+              label: 'linux',
+              href: '/blog/blog/linux'
+            },
+          ],
         },
-        // {
-        //   to: 'linux',
-        //   label: 'Linux',
-        //   position: 'left',
-        // },
         {
-          href: 'http://121.43.178.172:3001',
+          href: 'http://jweboy.com:3001',
           label: '项目展示',
           position: 'right',
         },
@@ -139,11 +143,15 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
         },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
