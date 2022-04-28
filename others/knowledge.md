@@ -226,7 +226,7 @@ Object.prototype.toString.call(function () {}); // "[object Function]"
 Object.prototype.toString.call({ name: "houhou" }); // "[object Object]"
 ```
 
-2. `instanceof`，根据原型链中查找对应类型的 `prototype `，只能判断对象类型，不能判断原始类型。
+2. `instanceof`，根据原型链中查找对应类型的 `prototype`，只能判断对象类型，不能判断原始类型。
 
 ```js
 [] instanceof Array; // true

@@ -131,13 +131,5 @@ module.exports = {
         'git/learn',
       ],
     },
-    {
-      type: 'category',
-      label: 'Vim',
-      collapsed: false,
-      items: [
-        'vim/command',
-      ],
-    },
   ],
 };
